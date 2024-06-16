@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun shareAppLink() {
-        val appLink = "https://play.google.com/store/apps/details?id=com.yourapp.package" // Replace with your app's link
+        val appLink = "https://play.google.com/store/apps/details?id=com.yourapp.package"
         val shareIntent = Intent().apply {
             action = Intent.ACTION_SEND
             putExtra(Intent.EXTRA_TEXT, "Check out this app: $appLink")
