@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backBtn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/left"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_toEndOf="@id/backBtn"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Start Lesson"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/black_light"
+                android:background="@drawable/stroke_bg"
+                android:text="Finish"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/share"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/black_light"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/stroke_bg"
+                android:text="Share"
+                android:layout_alignParentEnd="true"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:elevation="@dimen/_1sdp"
+        android:background="#4B000000"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Marshall Wilson"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson #: 2"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_14ssp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Time: 11:45 am"
+                android:textSize="@dimen/_14ssp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Lesson"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:background="@drawable/stroke_bg"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#F3000000"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="1. Instruments Devices"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Well Performed"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Good"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Improvement Needed"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Poor"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:hint="Comment"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_11ssp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:background="@drawable/stroke_bg"
+                    android:gravity="start"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry,TextFields" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. Steering hand over hand"
+                    android:textSize="@dimen/_13ssp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Well Performed"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Good"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Improvement Needed"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Poor"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/stroke_bg"
+                    android:gravity="start"
+                    android:hint="Comments"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:textSize="@dimen/_11ssp"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry,TextFields,DuplicateSpeakableTextCheck" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. Right Turns"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_13ssp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Well Performed"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Good"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Improvement Needed"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Poor"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:hint="Comments"
+                    android:textSize="@dimen/_11ssp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:background="@drawable/stroke_bg"
+                    android:gravity="start"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry,TextFields" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. Official programming language for Android"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/roboto"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Java"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Python"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kotlin"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TooManyViews,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Swift"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:hint="Comments"
+                    android:textSize="@dimen/_11ssp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:background="@drawable/stroke_bg"
+                    android:gravity="start"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry,TextFields" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:textColor="@color/black_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="5. Which keyword is used to declare a constant in Kotlin"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="const"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="final"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="static"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="val"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:hint="Comments"
+                    android:textSize="@dimen/_11ssp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:background="@drawable/stroke_bg"
+                    android:gravity="start"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry,TextFields" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:textColor="@color/black_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="6.Which of the following is used to define a function in Kotlin?"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"/>
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="def"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"/>
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="func"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"/>
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="function"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"/>
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="fun"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:hint="Comments"
+                    android:textSize="@dimen/_11ssp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:background="@drawable/stroke_bg"
+                    android:gravity="start"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry,TextFields" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="7.Which keyword is used to prevent method overriding in Java?"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"/>
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="private"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"/>
+
+                        <TextView
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="static"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"/>
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="final"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/circle_checkbox"
+                            android:button="@null"/>
+
+                        <TextView
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="protected"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:hint="Comments"
+                    android:textSize="@dimen/_11ssp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:background="@drawable/stroke_bg"
+                    android:gravity="start"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry,TextFields" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
